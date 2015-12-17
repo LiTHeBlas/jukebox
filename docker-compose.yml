@@ -1,0 +1,12 @@
+door:
+  build: door
+  cap_add:
+    - SYS_RAWIO
+  devices:
+    - /dev/mem
+  environment:
+    LOCK_GPIO_PIN: 11
+    UNLOCK_DURATION: 10
+    SECRET_KEY: abc
+  ports:
+    - "5000:5000"
