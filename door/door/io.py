@@ -9,6 +9,7 @@ logger = logging.getLogger(__name__)
 
 
 def setup():
+    GPIO.setwarnings(False)
     GPIO.setmode(GPIO.BOARD)
     GPIO.setup(settings.LOCK_GPIO_PIN, GPIO.OUT, initial=GPIO.LOW)
 
