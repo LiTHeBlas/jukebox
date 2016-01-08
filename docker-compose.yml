@@ -10,3 +10,12 @@ door:
     SECRET_KEY: abc
   ports:
     - "5000:5000"
+
+jukebox:
+  build: jukebox
+  devices:
+    - /dev/snd
+  ports:
+    - "6600:6600"
+    - "6680:6680"
+

@@ -1,0 +1,4 @@
+Mopidy==1.1.1
+Mopidy-Moped==0.6.4
+Mopidy-Mopify==1.5.8
+Mopidy-Spotify==2.2.0
