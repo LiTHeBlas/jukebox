@@ -4,6 +4,8 @@ import logging
 from flask import Flask, abort, request
 from flask_restful import Api, Resource, reqparse
 
+from opbeat.contrib.flask import Opbeat
+
 from .. import settings
 from ..lib import get_closed, get_locked, unlock
 from .auth import TokenAuth
@@ -13,6 +15,7 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 auth = TokenAuth()
 api = Api(app)
+opbeat = Opbeat(app)
 
 
 @app.before_request
