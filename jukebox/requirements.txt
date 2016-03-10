@@ -1,4 +1,0 @@
-Mopidy==1.1.2
-Mopidy-API-Explorer==1.0.1
-Mopidy-Mopify==1.5.14
-Mopidy-Spotify==2.2.0
