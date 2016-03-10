@@ -11,7 +11,7 @@ RUN apt-key add /etc/apt/sources.list.d/mopidy.gpg && \
         gcc \
         python-dev \
         python-pip \
-        python-gst1.0 \
+        python-gst-1.0 \
         gir1.2-gstreamer-1.0 \
         gir1.2-gst-plugins-base-1.0 \
         gstreamer1.0-plugins-good \
